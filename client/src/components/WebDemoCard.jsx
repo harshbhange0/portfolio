@@ -17,13 +17,13 @@ function WebDemoCard({ ImageUrl, gitLink, DemoLink,title }) {
         <span className="py-1 px-2">{title}</span>
         <a
           className="bg-sky-500/75 py-1 px-2 text-white rounded-[.2rem] hover:bg-sky-500/90 ease-in duration-200"
-          href={DemoLink} target="_blank"
+          href={DemoLink} target="_blank" rel="noreferrer"
         >
           Demo
         </a>
         <a
           className="bg-cyan-500/75 py-1 px-2 text-white rounded-[.2rem] hover:bg-cyan-500/90 ease-in duration-200"
-          target="_blank"
+          target="_blank"rel="noreferrer"
           href={gitLink}
         >
           gitHub
