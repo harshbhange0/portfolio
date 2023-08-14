@@ -3,14 +3,19 @@ import Navbar from "./components/Navbar";
 import Svg1 from "./assets/Firmware-cuate.svg";
 import Svg2 from "./assets/profile.png";
 import { BsLink45Deg } from "react-icons/bs";
-import htmlLogo from "./assets/html.png"
-import cssLogo from "./assets//css-3.png"
-import jsLogo from "./assets/js.png"
-import cLogo from "./assets/icons8-c-programming-480.png"
-import bsLogo from "./assets/bootstrap.png"
-import tailLogo from "./assets/tailwindcss.svg"
-import reacLogo from "./assets/react-2.svg"
-import mgbdLogo from "./assets/MongoDB.svg"
+import htmlLogo from "./assets/html.png";
+import cssLogo from "./assets//css-3.png";
+import jsLogo from "./assets/js.png";
+import cLogo from "./assets/icons8-c-programming-480.png";
+import bsLogo from "./assets/bootstrap.png";
+import tailLogo from "./assets/tailwindcss.svg";
+import reacLogo from "./assets/react-2.svg";
+import mgbdLogo from "./assets/MongoDB.svg";
+import petopia from "./assets/petopia.png";
+import QuizMaster from "./assets/QuizMaster.png"
+import gf from "./assets/gf.png";
+import WebDemoCard from "./components/WebDemoCard";
+import weatherApp from "./assets/weatherApp.png";
 
 function App() {
   return (
@@ -59,54 +64,93 @@ function App() {
               </div>
             </div>
           </div>
-        </section> 
-        <section id="skills" className="flex justify-center  flex-col  gap-8 h-[100%] w-[100%] pt-[40px]">
-            <h1 className="text-center text-5xl">Skills</h1>
-              <h1 className="w-[100%] text-3xl text-center">Languages</h1>
-            <div className="flex w-[100%] justify-center flex-row flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem]">
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={htmlLogo} alt="Html" />
-              </div>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={cssLogo} alt="CSS" />
-              </div>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={jsLogo} alt="JavaScript" />
-              </div>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={cLogo} alt="C Programming Language" />
-              </div>
+        </section>
+        <section
+          id="skills"
+          className="flex justify-center  flex-col  gap-8 h-[100%] w-[100%] pt-[40px]"
+        >
+          <h1 className="text-center text-5xl">Skills</h1>
+          <h1 className="w-[100%] text-3xl text-center">Languages</h1>
+          <div className="flex w-[100%] justify-center flex-row flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem]">
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img className="p-2 sm:p-4 m-1" src={htmlLogo} alt="Html" />
             </div>
-            <div className="flex w-[100%] justify-center flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem] ">
-              <h1 className="w-[100%] text-3xl text-center">Frameworks</h1>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={reacLogo} alt="React" />
-              </div>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
-                <img className="p-2 sm:p-4 m-1" src={bsLogo} alt="Bootstrap" />
-              </div>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem] flex justify-center items-center">
-                <img className="p-2 sm:p-4 m-1 " src={tailLogo} alt="Tailwind" />
-              </div>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img className="p-2 sm:p-4 m-1" src={cssLogo} alt="CSS" />
             </div>
-            <div className="flex w-[100%] justify-center flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem] ">
-              <h1 className="w-[100%] text-3xl text-center">Database</h1>
-              <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:h-[220px] sm:w-[150px] p-2 sm:p-[1rem] flex justify-center flex-col">
-                <img
-                  className=" h-[100%] w-[100%] p-2 sm:p-4 m-1"
-                  src={mgbdLogo}
-                  alt="MongoDD"
-                />
-              </div>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img className="p-2 sm:p-4 m-1" src={jsLogo} alt="JavaScript" />
             </div>
-          </section>
-        <section id="projects" className="h-[100vh] flex  flex-col gap-[1.5rem] pt-[40px]"  >
-          <h1 className="text-center text-5xl">Projects</h1>
-          <div className="flex flex-col sm:flex-row ">
-
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img
+                className="p-2 sm:p-4 m-1"
+                src={cLogo}
+                alt="C Programming Language"
+              />
+            </div>
+          </div>
+          <div className="flex w-[100%] justify-center flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem] ">
+            <h1 className="w-[100%] text-3xl text-center">Frameworks</h1>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img className="p-2 sm:p-4 m-1" src={reacLogo} alt="React" />
+            </div>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem]">
+              <img className="p-2 sm:p-4 m-1" src={bsLogo} alt="Bootstrap" />
+            </div>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:w-[150px] p-2 sm:p-[1rem] flex justify-center items-center">
+              <img className="p-2 sm:p-4 m-1 " src={tailLogo} alt="Tailwind" />
+            </div>
+          </div>
+          <div className="flex w-[100%] justify-center flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem] ">
+            <h1 className="w-[100%] text-3xl text-center">Database</h1>
+            <div className="border min-w-[100px] max-w-[20%] rounded-custom4 hover:rounded-custom5 hover:shadow-lg ease-in duration-300 shadow-sm sm:h-[220px] sm:w-[150px] p-2 sm:p-[1rem] flex justify-center flex-col">
+              <img
+                className=" h-[100%] w-[100%] p-2 sm:p-4 m-1"
+                src={mgbdLogo}
+                alt="MongoDD"
+              />
+            </div>
           </div>
         </section>
-        <section id="contact" className="h-[100vh] flex " />
+        <section
+          id="projects"
+          className="h-[100%] flex  flex-col gap-y-[2rem] pt-[40px]"
+        >
+          <h1 className="text-center text-5xl">Projects</h1>
+          <div className="flex flex-col justify-between sm:flex-row   gap-[3rem] flex-wrap">
+          <WebDemoCard
+              ImageUrl={gf}
+                title="Glorious Gifts"
+               DemoLink="https://glourios-gifts.netlify.app/"
+              gitLink="https://github.com/harshbhange0/Glourios-gifts"
+            />
+            <WebDemoCard
+              ImageUrl={petopia}
+                title="Petopia"
+               DemoLink="https://petopia.netlify.app/"
+              gitLink="https://github.com/harshbhange0/petopiya"
+            />
+            <WebDemoCard
+              ImageUrl={QuizMaster}
+              title="Quiz Master"
+              DemoLink="https://quiz-master-rtc.netlify.app/"
+              gitLink="https://github.com/harshbhange0/quizmaster"
+            />
+            <WebDemoCard
+              ImageUrl={weatherApp}
+              title="Weather App"
+              DemoLink="https://weather-app-github-harshbhange0.netlify.app/"
+              gitLink="https://github.com/harshbhange0/weather_app_react"
+            />
+            <WebDemoCard
+              ImageUrl=""
+              title="work in progress"
+              DemoLink="https://weather-app-github-harshbhange0.netlify.app/"
+              gitLink="https://github.com/harshbhange0/weather_app_react"
+            />
+          </div>
+        </section>
+        <section id="contact" className="h-[100vh] flex pt-[40px]" />
       </div>
     </div>
   );
