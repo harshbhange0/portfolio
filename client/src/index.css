@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  position: relative;
+}
+.typing-container {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 5s steps(20) infinite;
+
+  position: relative;
+  padding: 0 0.5rem;
+  --rotate: 0deg;
+}
+
+@keyframes rotate {
+  0% {
+    --rotate: 0deg;
+  }
+  50% {
+    --rotate: 180deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.typing-text::after {
+  content: "";
+  display: block;
+  width: 3px;
+  border-radius: 4rem;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  animation:
+    blink 0.4s steps(40) infinite,
+    rotate 4s infinite ease;
+  background: linear-gradient(var(--rotate), #0602ff, #ff01d0);
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+    background-position: 0% 50%;
+  }
+  100% {
+    width: 100%;
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+nav a {
+  transition: all 0.2s ease;
+}
+nav a:hover {
+  /* text-shadow: 0 0 .2rem #002aff70; */
+  color: #1b1b36;
+}
+/* section {
+  border: .1rem solid #ccc;
+}
+div {
+  border: .1rem dotted #0602ff;
+}
+ul {
+  border: #ff01d0 .1rem solid;
+  padding: .1rem;
+  margin: .1rem;
+}
+li {
+  border: #ff0901.1rem dotted;
+}
+a {
+  border: #17ff02.1rem solid;
+} */
