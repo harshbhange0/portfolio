@@ -58,8 +58,9 @@ function App() {
                 <img className="w-[200px] " src={Svg2} alt="" />
               </div>
             </div>
-          </div>{" "}
-          <section className="flex justify-center  flex-col  gap-8 h-[100%] w-[100%]">
+          </div>
+        </section> 
+        <section id="skills" className="flex justify-center  flex-col  gap-8 h-[100%] w-[100%] pt-[40px]">
             <h1 className="text-center text-5xl">Skills</h1>
               <h1 className="w-[100%] text-3xl text-center">Languages</h1>
             <div className="flex w-[100%] justify-center flex-row flex-wrap py-[2rem] gap-[.5rem] sm:gap-[1.5rem]">
@@ -99,7 +100,6 @@ function App() {
               </div>
             </div>
           </section>
-        </section>
         <section id="projects" className="h-[100vh] flex  flex-col gap-[1.5rem] pt-[40px]"  >
           <h1 className="text-center text-5xl">Projects</h1>
           <div className="flex flex-col sm:flex-row ">

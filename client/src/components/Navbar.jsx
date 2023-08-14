@@ -9,11 +9,17 @@ function Navbar() {
             Introduction
           </a>
         </li>
+        
         <li className="">
           <a href="#about" className="text-sm sm:text-base ">
             About
           </a>
-        </li>{" "}
+        </li>
+        <li className="">
+          <a href="#skills" className="text-sm sm:text-base ">
+          Skills
+          </a>
+        </li>
         <li className="">
           <a href="#projects" className="text-sm sm:text-base ">
             Projects
