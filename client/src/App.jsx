@@ -12,10 +12,11 @@ import tailLogo from "./assets/tailwindcss.svg";
 import reacLogo from "./assets/react-2.svg";
 import mgbdLogo from "./assets/MongoDB.svg";
 import petopia from "./assets/petopia.png";
-import QuizMaster from "./assets/QuizMaster.png"
+import QuizMaster from "./assets/QuizMaster.png";
 import gf from "./assets/gf.png";
 import WebDemoCard from "./components/WebDemoCard";
 import weatherApp from "./assets/weatherApp.png";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -118,16 +119,16 @@ function App() {
         >
           <h1 className="text-center text-5xl">Projects</h1>
           <div className="flex flex-col justify-between sm:flex-row   gap-[3rem] flex-wrap">
-          <WebDemoCard
+            <WebDemoCard
               ImageUrl={gf}
-                title="Glorious Gifts"
-               DemoLink="https://glourios-gifts.netlify.app/"
+              title="Glorious Gifts"
+              DemoLink="https://glourios-gifts.netlify.app/"
               gitLink="https://github.com/harshbhange0/Glourios-gifts"
             />
             <WebDemoCard
               ImageUrl={petopia}
-                title="Petopia"
-               DemoLink="https://petopia.netlify.app/"
+              title="Petopia"
+              DemoLink="https://petopia.netlify.app/"
               gitLink="https://github.com/harshbhange0/petopiya"
             />
             <WebDemoCard
@@ -145,12 +146,12 @@ function App() {
             <WebDemoCard
               ImageUrl=""
               title="work in progress"
-              DemoLink="https://weather-app-github-harshbhange0.netlify.app/"
-              gitLink="https://github.com/harshbhange0/weather_app_react"
+              DemoLink="#projects"
+              gitLink="#projects"
             />
           </div>
         </section>
-        <section id="contact" className="h-[100vh] flex pt-[40px]" />
+        <Contact />
       </div>
     </div>
   );
