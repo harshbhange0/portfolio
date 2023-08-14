@@ -25,8 +25,8 @@ function App() {
             <img src={Svg1} alt="" className="" />
           </div>
           <div className="sm:basis-full  flex justify-center items-center">
-            <div class="typing-container">
-              <div class="typing-text text-[26px] sm:text-4xl text-center">
+            <div className="typing-container">
+              <div className="typing-text text-[26px] sm:text-4xl text-center">
                 Hello, I'am Harsh{"  "}
               </div>
             </div>
