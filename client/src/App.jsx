@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Svg1 from "./assets/Firmware-cuate.svg";
-import Svg2 from "./assets/profile.png";
 import { BsLink45Deg } from "react-icons/bs";
 import htmlLogo from "./assets/html.png";
 import cssLogo from "./assets//css-3.png";
@@ -22,10 +21,11 @@ function App() {
   const [theme, setTheme] = useState(true);
   const newTheme = (toggle) => {
     setTheme(toggle);
+
   };
   return (
     <div className={`${theme ? "bg-white" : "bg-[#03001C] text-white"} `}>
-      <Navbar setTheme={setTheme} />
+      <Navbar setTheme={setTheme&&newTheme} />
       <div className="flex flex-col justify-center  gap-x-[2%] gap-y-[2rem] p-[3%]  md:px-[10%] md:py-[5%]">
         <section
           id="intro"
@@ -63,7 +63,7 @@ function App() {
                 <p
                   className={`m-4 p-4 leading-8 ${
                     theme
-                      ? " "
+                      ?  '"'
                       : "sm:bg-gradient-to-t  from-blue-500/10 to-cyan-500/10 sm:rounded-custom2"
                   } `}
                 >
