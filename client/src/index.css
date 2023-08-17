@@ -75,13 +75,7 @@ body {
     opacity: 0;
   }
 }
-nav a {
-  transition: all 0.2s ease;
-}
-nav a:hover {
-  /* text-shadow: 0 0 .2rem #002aff70; */
-  color: #1b1b36;
-}
+
 /* section {
   border: .1rem solid #ccc;
 }

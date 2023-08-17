@@ -19,6 +19,13 @@ module.exports = {
       custom4: "56% 44% 34% 66% / 53% 52% 48% 47% ",
       custom5: "33% 67% 28% 72% / 54% 37% 63% 46% ",
     },
+    dropShadow:{
+
+      dark_Shadow:"0 0 0.1rem rgb(30 41 59)" ,
+      dark_Shadow_sm:"0 0 0.1rem rgb(85, 118, 170)" ,
+      light_Shadow:" 0 0 0.1rem rgb(241 245 249)",
+      light_Shadow_sm:" 0 0 0.1rem rgb(237, 242, 247)",
+    },
   },
   plugins: [],
 };

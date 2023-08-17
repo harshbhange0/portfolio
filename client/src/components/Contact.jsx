@@ -6,11 +6,11 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="h-[100%] sm:h-[80vh] pt-[40px] pb-[2rem] flex justify-between items-center flex-col gap-y-[3rem] "
+      className="h-[100%] sm:h-[100vh] pt-[40px] pb-[2rem] flex justify-between items-center flex-col gap-y-[3rem] "
     >
 
       <h1 className="text-center text-5xl">Connect With Me</h1>
-      <div className="mx-auto flex p-4 card flex-col sm:flex-row gap-8 justify-center items-center rounded-t-full  rounder-b-sm shadow-xl  relative sm:shadow-lg border sm:rounded-t-none sm:rounded-sm">
+      <div className="mx-auto ease-in duration-100 flex p-4 card flex-col sm:flex-row gap-8 justify-center items-center rounded-t-full  rounder-b-sm shadow-xl  relative sm:shadow-lg border sm:rounded-t-none sm:rounded-sm">
 
         <img src="https://github.com/harshbhange0.png" className=" sm:shadow-lg rounded-full w-[200px] sm:absolute sm:top-[-300%]     m-1" alt="" />
         <h1 className="text-[26px]">Harsh Bhange</h1>
