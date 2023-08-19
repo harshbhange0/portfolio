@@ -3,7 +3,7 @@ import webIcon from "../assets/web_icon.jpg";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 
 function Navbar({ setTheme }) {
-  const [thames, setThames] = useState(true);
+  const [thames, setThames] = useState(false);
   const th = `text-sm sm:text-base ${
     thames
       ? "text-black ease-in duration-200 hover:text-stone-500"
@@ -59,20 +59,15 @@ function Navbar({ setTheme }) {
           </a>
         </li>
       </ul>
-      <div>
-        <button
-          onClick={() => {
-            setThames((prevThames) => !prevThames);
-            toggleThemes();
-          }}
-        >
-          {thames ? (
-            <BsSunFill className={th} />
-          ) : (
-            <BsMoonFill className={th} />
-          )}
-        </button>
-      </div>
+
+      <button
+        onClick={() => {
+          setThames((prevThames) => !prevThames);
+          toggleThemes();
+        }}
+      >
+        {thames ? <BsSunFill className={th} /> : <BsMoonFill className={th} />}
+      </button>
     </nav>
   );
 }

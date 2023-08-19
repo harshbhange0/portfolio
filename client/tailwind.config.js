@@ -26,6 +26,16 @@ module.exports = {
       light_Shadow:" 0 0 0.1rem rgb(241 245 249)",
       light_Shadow_sm:" 0 0 0.1rem rgb(237, 242, 247)",
     },
+    boxShadow:{
+      sm:"0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      shadow:"0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      md	: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      lg	: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      xl	: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      inner :" inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      custom:"0 0 .5rem 0 ",
+      none:" 0 0 #0000"
+    }
   },
   plugins: [],
 };
