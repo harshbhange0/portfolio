@@ -4,23 +4,7 @@ import { BsInstagram, BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 
 function Contact({ theme }) {
   let url = "https://github.com/harshbhange0.png";
-  {
-    /* <a className="" href="mailto:harshbhange123@gmail.com ">
-            <SiGmail className="text-[25px] text-red-400" />
-          </a>
-          <a className="" href="https://www.instagram.com/harshbhange0/">
-            <BsInstagram className="text-[25px] text-[#c6085d]" />
-          </a>
-          <a className="" href="https://www.linkedin.com/in/harshbhange0/">
-            <BsLinkedin className="text-[25px] text-[#28a5ff]" />
-          </a>
-          <a className="" href="https://github.com/harshbhange0">
-            <BsGithub className="text-[25px] text-[#287aff]" />
-          </a>
-          <a className="" href="https://wa.me/7721916040">
-            <BsWhatsapp className="text-[25px] text-[#25D366]" />
-          </a>*/
-  }
+
 
   return (
     <section id="contact" className="h-[100%] py-16 ">
