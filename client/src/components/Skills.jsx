@@ -7,7 +7,7 @@ import bsLogo from "../assets/bootstrap.png";
 import tailLogo from "../assets/tailwindcss.svg";
 import reacLogo from "../assets/react-2.svg";
 import mgbdLogo from "../assets/MongoDB.svg";
-function Skills({theme}) {
+function Skills({ theme }) {
   return (
     <section
       id="skills"
