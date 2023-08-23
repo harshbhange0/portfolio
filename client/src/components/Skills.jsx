@@ -7,6 +7,7 @@ import bsLogo from "../assets/bootstrap.png";
 import tailLogo from "../assets/tailwindcss.svg";
 import reacLogo from "../assets/react-2.svg";
 import mgbdLogo from "../assets/MongoDB.svg";
+import { icons } from "react-icons/lib";
 function Skills({ theme }) {
   return (
     <section
@@ -16,38 +17,49 @@ function Skills({ theme }) {
       <h1 className="text-center text-5xl">Skills</h1>
       <h1 className="w-[100%] text-center text-3xl">Languages</h1>
       <div className="flex w-[100%] flex-row flex-wrap justify-center gap-[.5rem] py-[2rem] sm:gap-[1.5rem]">
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4" src={htmlLogo} alt="Html" />
-        </div>
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4" src={cssLogo} alt="CSS" />
-        </div>
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4" src={jsLogo} alt="JavaScript" />
-        </div>
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img
-            className="m-1 p-2 sm:p-4"
-            src={cLogo}
-            alt="C Programming Language"
-          />
-        </div>
+        {[
+          { icon: htmlLogo },
+          { icon: cssLogo },
+          { icon: jsLogo },
+          { icon: cLogo },
+        ].map((icons, i) => {
+          return (
+            <div
+              key={i}
+              className={`min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem] ${
+                theme ? "" : "border border-[#6528F7] p-[.1rem]"
+              }`}
+            >
+              <img className="m-1 p-2 sm:p-4" src={icons.icon} alt="Html" />
+            </div>
+          );
+        })}
       </div>
+
       <div className="flex w-[100%] flex-wrap justify-center gap-[.5rem] py-[2rem] sm:gap-[1.5rem] ">
         <h1 className="w-[100%] text-center text-3xl">Frameworks</h1>
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4" src={reacLogo} alt="React" />
-        </div>
-        <div className="min-w-[100px] max-w-[20%] rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4" src={bsLogo} alt="Bootstrap" />
-        </div>
-        <div className="flex min-w-[100px] max-w-[20%] items-center justify-center rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem]">
-          <img className="m-1 p-2 sm:p-4 " src={tailLogo} alt="Tailwind" />
-        </div>
+        {[{ icon: reacLogo }, { icon: bsLogo }, { icon: tailLogo }].map(
+          (icons, i) => {
+            return (
+              <div
+                key={i + 1}
+                className={`flex min-w-[100px] max-w-[20%] items-center rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:w-[150px] sm:p-[1rem] ${
+                  theme ? "" : "border border-[#6528F7] p-[.1rem]"
+                }`}
+              >
+                <img className="m-1 p-2 sm:p-4" src={icons.icon} alt="React" />
+              </div>
+            );
+          },
+        )}
       </div>
       <div className="flex w-[100%] flex-wrap justify-center gap-[.5rem] py-[2rem] sm:gap-[1.5rem] ">
         <h1 className="w-[100%] text-center text-3xl">Database</h1>
-        <div className="flex min-w-[100px] max-w-[20%] flex-col justify-center rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:h-[220px] sm:w-[150px] sm:p-[1rem]">
+        <div
+          className={`flex min-w-[100px] max-w-[20%] flex-col justify-center rounded-custom4 border p-2 shadow-sm duration-300 ease-in hover:rounded-custom5 hover:shadow-lg sm:h-[220px] sm:w-[150px] sm:p-[1rem] ${
+            theme ? "" : "border border-[#6528F7] p-[.1rem]"
+          }`}
+        >
           <img
             className=" m-1 h-[100%] w-[100%] p-2 sm:p-4"
             src={mgbdLogo}

@@ -45,13 +45,13 @@ function About({ theme }) {
         </div>
         <div className="flex basis-[100%] items-center justify-center overflow-hidden  py-[3rem] sm:basis-[30%] sm:py-[0]">
           <div
-            className={`overflow-hidden rounded-full  border border-current shadow-lg duration-300 ease-in  sm:rounded-custom2 sm:hover:rounded-custom3 ${
-              theme ? "border-neutral-200 " : "border-[#8CABFF] bg-[#e3f6ff9b]"
+            className={`overflow-hidden rounded-full border shadow-lg duration-300 ease-in  sm:rounded-custom2 sm:hover:rounded-custom3 ${
+              theme ? "border-neutral-200 " : " border-[#0079FF] bg-[#e3f6ff9b]"
             }`}
           >
             <img
               className={` w-[200px] duration-300 ease-in  ${
-                theme ? " " : " hover:bg-[#e3f6ff9b] sm:hover:rounded-custom2 "
+                theme ? " " : " hover:bg-[#e3f6ff9b] sm:hover:rounded-custom3 "
               } `}
               src="https://github.com/harshbhange0.png"
               alt=""
