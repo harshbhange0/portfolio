@@ -5,6 +5,7 @@ import QuizMaster from "../assets/QuizMaster.png";
 import gf from "../assets/gf.png";
 import WebDemoCard from "./WebDemoCard";
 import weatherApp from "../assets/weatherApp.png";
+import mernApp from "../assets/mern-todo.png"
 
 function Project({ theme }) {
   return (
@@ -41,10 +42,16 @@ function Project({ theme }) {
               github: "https://github.com/harshbhange0/weather_app_react",
             },
             {
-              title: "work in progress",
-              image: "",
+              title: "Mern TODO app",
+              image: ,
               link: "#projects",
               github: "#projects",
+            },
+        {
+              title: "work in progress",
+              image: mernApp,
+              link: "https://mern-stack-todo.netlify.app/",
+              github: "https://github.com/harshbhange0/crud-to-do-app",
             },
           ].map((card, i) => {
             return (
