@@ -43,7 +43,7 @@ function Project({ theme }) {
             },
             {
               title: "Mern TODO app",
-              image: ,
+              image: "",
               link: "#projects",
               github: "#projects",
             },
